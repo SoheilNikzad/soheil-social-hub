@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink } from 'lucide-react';
-
 const Index = () => {
   const socialLinks = [{
     name: "LinkedIn",
@@ -26,11 +24,10 @@ const Index = () => {
     nameFa: "فیسبوک",
     url: "https://www.facebook.com/mirsoheilnikzad/"
   }];
-  
   return <div className="flex items-center justify-center min-h-screen">
       <Card className="w-full max-w-3xl mx-4 border-none shadow-none">
         <CardContent className="p-6">
-          <div className="text-center mb-8">
+          <div className="text-center mb-8 px-[65px]">
             <div className="mb-4">
               <h1 className="font-lexend mb-1 text-2xl">MirSoheil Nikzad Kalurazi</h1>
               <h1 className="text-3xl font-vazirmatn">میرسهیل نیک‌زاد کـلورزی</h1>
@@ -46,8 +43,7 @@ const Index = () => {
             </div>
             
             <div className="space-y-3 mb-8 max-w-xl mx-auto">
-              {socialLinks.map((link, index) => (
-                <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="block">
+              {socialLinks.map((link, index) => <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="block">
                   <Button variant="outline" className="w-full py-6 flex items-center justify-between bg-white hover:bg-gray-50 border border-gray-200 text-black font-normal">
                     <span className="font-lexend">{link.name}</span>
                     <div className="flex items-center">
@@ -55,8 +51,7 @@ const Index = () => {
                       <ExternalLink className="h-4 w-4 ml-2" />
                     </div>
                   </Button>
-                </a>
-              ))}
+                </a>)}
             </div>
             
             <div className="mt-12 border-t border-gray-200 pt-6 text-gray-600">
@@ -68,5 +63,4 @@ const Index = () => {
       </Card>
     </div>;
 };
-
 export default Index;
