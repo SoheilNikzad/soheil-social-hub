@@ -24,7 +24,7 @@ const Index = () => {
     nameFa: "فیسبوک",
     url: "https://www.facebook.com/mirsoheilnikzad/"
   }];
-  return <div className="min-h-screen bg-white flex items-center justify-center py-10">
+  return <div className="">
       <Card className="w-full max-w-3xl mx-4 border-none shadow-none">
         <CardContent className="p-6">
           <div className="text-center mb-8">
@@ -44,7 +44,7 @@ const Index = () => {
             
             <div className="space-y-3 mb-8">
               {socialLinks.map((link, index) => <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="block">
-                  <Button variant="outline" className="w-full md:w-3/4 lg:w-2/3 py-6 flex items-center justify-between bg-white hover:bg-gray-50 border border-gray-200 text-black text-justify">
+                  <Button variant="outline" className="w-full md:w-3/4 lg:w-2/3 py-6 flex items-center justify-between bg-white hover:bg-gray-50 border border-gray-200 text-black text-justify text-base font-normal">
                     <span className="font-lexend">{link.name}</span>
                     <div className="flex items-center">
                       <span className="font-vazirmatn mx-2">{link.nameFa}</span>
