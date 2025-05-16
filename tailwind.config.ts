@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,8 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'bitcoin-orange': '#F7931A',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -89,6 +91,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				'vazirmatn': ['Vazirmatn', 'sans-serif'],
+				'lexend': ['Lexend', 'sans-serif'],
 			}
 		}
 	},
