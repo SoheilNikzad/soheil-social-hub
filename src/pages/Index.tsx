@@ -29,8 +29,8 @@ const Index = () => {
         <CardContent className="p-6">
           <div className="text-center mb-8">
             <div className="mb-4">
-              <h1 className="text-3xl font-lexend mb-1">Soheil Nikzad</h1>
-              <h1 className="text-3xl font-vazirmatn">سهیل نیک‌زاد</h1>
+              <h1 className="font-lexend mb-1 text-2xl">MirSoheil Nikzad Kalurazi</h1>
+              <h1 className="text-3xl font-vazirmatn">میرسهیل نیک‌زاد کـلورزی</h1>
             </div>
             
             <div className="mb-8 border-t-4 border-bitcoin-orange pt-6 mt-6">
