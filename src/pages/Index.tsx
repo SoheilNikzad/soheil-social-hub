@@ -37,9 +37,8 @@ const Index = () => {
               <p className="text-lg font-lexend mb-2">
                 Hello! Welcome to my personal page. To access my social media profiles please click on the buttons below.
               </p>
-              <p className="text-lg font-vazirmatn" dir="rtl">
-                سلام! به صفحه شخصی من خوش آمدید. برای دسترسی به پروفایل های من در شبکه های اجتماعی روی دکمه های زیر کلیک کنید.
-              </p>
+              <p dir="rtl" className="text-lg font-vazirmatn font-light">سلام! به صفحه شخصی من خوش آمدید.‌
+برای دسترسی به پروفایل‌های من در شبکه‌های اجتماعی روی دکمه‌های زیر کلیک کنید.</p>
             </div>
             
             <div className="space-y-3 mb-8 max-w-xl mx-auto">
