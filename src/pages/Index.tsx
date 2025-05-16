@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink } from 'lucide-react';
+
 const Index = () => {
   const socialLinks = [{
     name: "LinkedIn",
@@ -24,7 +26,8 @@ const Index = () => {
     nameFa: "فیسبوک",
     url: "https://www.facebook.com/mirsoheilnikzad/"
   }];
-  return <div className="">
+  
+  return <div className="flex items-center justify-center min-h-screen">
       <Card className="w-full max-w-3xl mx-4 border-none shadow-none">
         <CardContent className="p-6">
           <div className="text-center mb-8">
@@ -42,16 +45,18 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="space-y-3 mb-8">
-              {socialLinks.map((link, index) => <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="block">
-                  <Button variant="outline" className="w-full md:w-3/4 lg:w-2/3 py-6 flex items-center justify-between bg-white hover:bg-gray-50 border border-gray-200 text-black text-justify text-base font-normal">
+            <div className="space-y-3 mb-8 max-w-xl mx-auto">
+              {socialLinks.map((link, index) => (
+                <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="block">
+                  <Button variant="outline" className="w-full py-6 flex items-center justify-between bg-white hover:bg-gray-50 border border-gray-200 text-black font-normal">
                     <span className="font-lexend">{link.name}</span>
                     <div className="flex items-center">
                       <span className="font-vazirmatn mx-2">{link.nameFa}</span>
                       <ExternalLink className="h-4 w-4 ml-2" />
                     </div>
                   </Button>
-                </a>)}
+                </a>
+              ))}
             </div>
             
             <div className="mt-12 border-t border-gray-200 pt-6 text-gray-600">
@@ -63,4 +68,5 @@ const Index = () => {
       </Card>
     </div>;
 };
+
 export default Index;
